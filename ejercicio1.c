@@ -6,7 +6,7 @@ void suma_diagonales(int n, int matriz[n][n], int *principal, int *secundaria) {
     principal = 0;
     secundaria = 0;
     
-    //Se recorre la matriz y se suma al valor apuntado
+    //Se recorre la matriz y se suma al valor de principal o secundaria
 
    for (int i = 0; i < tamaño; i++) {
         sumaPrincipal += matriz[i][i]; // Diagonal principal
