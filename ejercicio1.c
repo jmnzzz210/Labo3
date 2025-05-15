@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void suma_diagonales(int n, int matriz[n][n], int *principal, int *secundaria) {
+void suma_diagonales(int n, int matriz[n][n], int principal, int secundaria) {
 
 	//Iniciar los valores en 0
     principal = 0;
