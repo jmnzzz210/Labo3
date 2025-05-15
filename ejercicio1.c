@@ -4,14 +4,14 @@ void suma_diagonales(int n, int matriz[n][n], int *principal, int *secundaria) {
 
 	//Iniciar los valores apuntados en cero
 
-    *principal = 0;
-    *secundaria = 0;
+    principal = 0;
+    secundaria = 0;
     
     //Se recorre la matriz y se suma al valor apuntado
 
-    for(int i = 0; i < n; i++) {
-        *principal += matriz[i][i];
-        *secundaria += matriz[i][n-1-i];
+   for (int i = 0; i < tamaño; i++) {
+        sumaPrincipal += matriz[i][i]; // Diagonal principal
+        sumaSecundaria += matriz[i][tamaño - 1 - i]; // Diagonal secundaria
     }
 }
 
@@ -37,10 +37,10 @@ int main() {
      printf("Caso 1: Matriz 2x2\n");
    
      printf("Matriz 1:\n");
-    imprimir_matriz(2, matriz1);
-    printf("Diagonal principal: %d\n", diag_principal1);
-    printf("Diagonal secundaria: %d\n", diag_secundaria1);
-    printf("Suma total: %d\n\n", diag_principal1 + diag_secundaria1);
+     imprimir_matriz(2, matriz1);
+     printf("Diagonal principal: %d\n", diag_principal1);
+     printf("Diagonal secundaria: %d\n", diag_secundaria1);
+     printf("Suma total: %d\n\n", diag_principal1 + diag_secundaria1);
 
     //Prueba 2
     int matriz2[3][3] = {
