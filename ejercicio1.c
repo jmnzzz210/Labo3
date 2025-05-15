@@ -2,8 +2,7 @@
 
 void suma_diagonales(int n, int matriz[n][n], int *principal, int *secundaria) {
 
-	//Iniciar los valores apuntados en cero
-
+	//Iniciar los valores en 0
     principal = 0;
     secundaria = 0;
     
